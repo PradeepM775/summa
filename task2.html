@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        
+    </div>
+    <div class="nav" >
+           <nav>
+            <ul>
+                <li>About</li>
+                <li>sign in</li>
+            </ul>
+           </nav>
+    </div>
+    <div class="content">
+           <h2>WallCare</h2>
+    </div>
+    <div class="gaallery">
+        <select id="optionSelect">
+            <option value="" disabled selected>click Me🤙</option>
+            <option value="naruto.html">Naruto</option>
+            <option value="black.html">Black Widow</option>
+            <option value="cap.html">Caption Marvel</option>
+            <option value="iron.html">Ironman</option>
+            <option value="snake.html">snake</option>
+            <option value="spider.html">Spider Man</option> 
+            <option value="one.html">one piece</option>     
+        </select>
+        <script>
+            document.getElementById("optionSelect").addEventListener("change", function() {
+                var selectedOption = this.options[this.selectedIndex];
+                if (selectedOption.value) {
+                    window.open(selectedOption.value, "");
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>
